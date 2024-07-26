@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel = "icon" href="img/vector-initial-b-letter-logo-with-swoosh-colored-red-and-black.ico">
+    <title>Porfolio De Brayan</title>
+</head>
+<body>
+    <a href="https://wa.me/51900848143" class="btn-wsp" target="_blank">
+	    <i class="fa fa-whatsapp icono"></i>
+	</a>
+  
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-brands fa-codepen"></i>
+                        <h1>Brayan Montero Bereche</h1>
+                    </div>
+                    <nav id="nav" class="">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="#habilidades">Habilidades</a>
+                        <a href="#trabajos">Trabajos</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+    
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                    <div class="redes">
+
+                        <a href="https://www.facebook.com/Brayancito.montero.737001"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </header>
+    
+                <div class="fila">
+                    <div class="col">
+                        <h2>Ingeniero de Sistemas</h2>
+                        <p>Soy un joven apasionado por la tecnología. Actualmente llevo cursos de programación orientada a objetos en el ámbito de Ingeniería de Desarrollo de Sistemas de Información. Tengo grandes habilidades e intereses de seguir fortaleciendo mis conocimientos educativos para formarme profesionalmente y de esa manera seguir hacia adelante.</p>
+                        <button class="btn btn-1">Descargar CV</button>
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="img/bryan.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+    <!-- sección SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                    </div>
+                    <h3>OFIMÁTICA PROFESIONAL</h3>
+                    <p>Mi servicios en ofimática es como el asistente de confianza en tu oficina virtual.que te ayudara con tareas diarias. Desde redactar documentos importantes en Word, hasta organizar datos en Excel como un mago de las finanzas y crear presentaciones impactantes con PowerPoint.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                    </div>
+                    <h3>DISEÑO GRÁFICO</h3>
+                    <p>En diseño gráfico poseo el arte de comunicación visual a través de texto, imágenes, símbolos o ilustraciones. Mi objetivo es crear representaciones visuales con orden y claridad para que las personas entiendan el mensaje. Desde creando infografías, logos, modificar fotos, escribir posts, publicitar y vender productos o servicios, e incluso diseñar páginas web y videos. Desde las pinturas rupestres hasta las tendencias modernas, el diseño gráfico ha estado presente en la historia de la humanidad, evolucionando constantemente. </p>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                                      <img src="data:image/png;base64,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">
+                        </div>
+                    </div>
+                    <h3>MANTENIMIENTO</h3>
+                    <p>El mantenimiento de computadoras es fundamental Mis servicios que puedo brindar: </p>
+                    <p>   •	Mantenimiento preventivo: Limpia tanto el hardware como el software, verifica periféricos y cables, y mantén actualizado el sistema operativo.</p>
+                    <p>   •	Mantenimiento correctivo: Soluciona problemas existentes, reemplaza piezas defectuosas y corrige fallos.</p>
+                    <p>   •	Mantenimiento predictivo: Usa datos históricos para predecir fallas y tomar medidas preventivas.</p>
+                      <p> •	Mantenimiento proactivo: Monitorea constantemente, actualiza y ajusta para optimizar el rendimiento.</p>
+               
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                    </div>
+                    <h3>CREACIÓN DE BASE DE DATOS</h3>
+                    <p>Como creador de bases de datos Tengo la responsabilidad de diseñar, crear y mantener estructuras de almacenamiento de datos. Esto incluye diseñar tablas, relaciones, escribir consultas SQL y garantizar la eficiencia y seguridad de la base de datos. En resumen, sere el arquitecto detrás de la organización y gestión de la información digital.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                    </div>
+                    <h3>SOPORTE A CLIENTE</h3>
+                    <p>Como soporte técnico tengo el servicio de ofrecer respuestas para resolver las dudas de los clientes sobre el producto o servicio que adquirieron. Mi objetivo principal es prevenir y resolver problemas, además de optimizar y mejorar el rendimiento de tus productos o servicios. Tengo dos tipos: soporte intelectual (proporciona información y entrenamiento) y soporte tecnológico (realiza tareas de mantenimiento).</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/48/api.png" alt="api"/>
+                        </div>
+                    </div>
+                    <h3>INTERFAZ DE PROGRAMACION DE SOFTWARE</h3>
+                    <p>Creador de interfaces de aplicaciones se encarga de diseñar las pantallas y elementos visuales con los que los usuarios interactúan en una aplicación. Mi objetivo es crear una experiencia de usuario intuitiva y atractiva. Trabajando en colaboración con los demas desarrolladores para implementar el diseño de la interfaz de manera efectiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección habilidades -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenedor-habi">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="85">
+                                85%
+                            </div>
+                            <h2>VISUAL BASIC</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="50">
+                                50%
+                            </div>
+                            <h2>HTML,CSS,JAVA SCRIP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="80">
+                                80%
+                            </div>
+                            <h2>CAP CUT</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="60">
+                                60%
+                            </div>
+                            <h2>MYSQL,SQLSERVER</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                90%
+                            </div>
+                            <h2>CANVA</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="65">
+                                65%
+                            </div>
+                            <h2>PHOTOSHOP</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección trabajos -->
+    <section class="trabajos" id="trabajos">
+        <h2>Mis Trabajos</h2>
+
+        <nav>
+            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Diseño</a>
+            <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Programación</a>
+            <a href="javascript:void(0)" class="" id="animaciones" onclick="verCategoria('animaciones')">Mas...</a>
+        </nav>
+
+        <div class="galeria">
+            <div class="item disenio">
+                <img src="img/post.jpg" alt="">
+                <div class="info">
+                    <h3>POSTER DE PUBLICACIONES/h3>
+                    <span> Hecho en PHOTOSHOP</span>
+                    <a href="img/post.jpg">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/CursoSistemaVenta - Microsoft Visual Studio 23_07_2024 17_04_10.png" alt="">
+                <div class="info">
+                    <h3>SISTEMA DE VENTAS </h3>
+                    <span>Hecho con SQL</span><span>c++</span><span>Visual Basic</span>
+                    <a href="img/sistema.mp4">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="img/PRESTA YA! 01_07_2024 21_10_09.png" alt="">
+                <div class="info">
+                    <h3>SISTEMA DE PRESTAMO</h3>
+                    <span>Hecho con C++</span><span>Visual Basic</span>
+                    <a href="img/PRESTA YA! 01_07_2024 21_10_09.png">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="img/FLYER-BEER-ENERGY.png" alt="">
+                <div class="info">
+                    <h3>FLYER-BEER-ENERGY</h3>
+                    <span>Hecho en PHOTOSHOP</span>
+                    <a href="img/FLYER-BEER-ENERGY.png">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="img/ASOCIANCION DE AFP 04_07_2024 18_25_02.png" alt="">
+                <div class="info">
+                    <h3>APLICACION PARA CALCULAR MONTOS APORTADOS A UNA AFP</h3>
+                    <span>Hecho con C++</span><span>Visual Basic</span>
+                    <a href="img/ASOCIANCION DE AFP 04_07_2024 18_25_02.png">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/HOTEL 06_07_2024 17_54_42.png" alt="">
+                <div class="info">
+                    <h3>REGISTAR VENTAS EN HOSTALES</h3>
+                    <span>Hecho con C++</span><span>Visual Basic</span>
+                    <a href="img/HOTEL 06_07_2024 17_54_42.png">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="img/cumbia.png" alt="">
+                <div class="info">
+                    <h3>FLYER DE CUMBIA</h3>
+                    <span>Hecho en PHOTOSHOP</span><span>
+                    <a href="img/cumbia.png">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/VENTAS 04_07_2024 18_23_35.png" alt="">
+                <div class="info">
+                    <h3>AGENCIA DE VENTAS</h3>
+                    <span>Hecho con C++</span><span>Visual Basic</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/tiendita - Microsoft Visual Studio 25_07_2024 18_12_26.png" alt="">
+                <div class="info">
+                    <h3>TIENDITA--- VENDER</h3>
+                    <span>Hecho con C++</span><span>Visual Basic</span>
+                    <a href="img/tiendita - Microsoft Visual Studio 25_07_2024 18_12_26.png">Ver Trabajo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección contacto -->
+    <form action="https://formsubmit.co/bryanmonterobereche90@gmail.com" method="POST">
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Gmail:</h3>
+                        <p>bryanmonterobereche90@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono:</h3>
+                        <p>900848143</p>
+                    </div>
+                    <div class="info">
+                        <h3>País</h3>
+                        <p>Perù</p>
+                    </div>
+                    <div class="info">
+                        <h3>Ciudad:</h3>
+                        <p>Piura</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Nombre...">
+                    <input type="text" placeholder="Correo...">
+                    <textarea name="control" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</form>
+    <footer>
+        <p>Creado por Bryan MB --- 2024 </p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
